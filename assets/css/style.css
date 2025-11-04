@@ -1,0 +1,43 @@
+.cv-body {
+    background-color: #14532D;
+}
+
+.gen-info-box {
+    background-color: #ECFDF5;
+    width: 350px;
+    left: 48px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.gen-info-box h2{
+    color: #14532D;
+}
+
+.detail-info-box {
+    background-color: white;
+    border-left: 7px solid white;
+    box-shadow: inset 7px 0 0 #14532D;
+    padding-left: 160px;
+    padding-top: 130px; 
+    padding-bottom: 130px; 
+    padding-right: 30px;
+}
+
+.detail-info-box h1{
+    margin-bottom: 0px !important;
+    color: #14532D;
+
+}
+
+.detail-info-box h2{
+    margin-bottom: 15px;
+    color: #14532D;
+
+}
+
+.name-box{
+    border-bottom: 4px solid #14532D;
+} 
+
+

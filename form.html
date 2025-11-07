@@ -21,7 +21,6 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
-                <span class="dot"></span>
             </div>
         </div>
 
@@ -52,56 +51,80 @@
                     </div>
                 </div>
             </div>
-
             <!-- Step 2: Education -->
-            <div class="form-step card">
-                <h2>Education</h2>
-                <div class="row">
-                    <div class="col-6 field">
-                        <label>Degree</label>
-                        <input name="degree" type="text" placeholder="" required>
+            <div class="form-step card" id="education-step">
+                <h2 class="mb-0">Education</h2>
+                <div id="education-container"></div>
+
+                <template id="education-template">
+                    <div class="inputs-entry row">
+                        <div class="col-6 field">
+                            <label>Degree</label>
+                            <input name="degree" type="text" required>
+                        </div>
+                        <div class="col-6 field">
+                            <label>Institute</label>
+                            <input name="institute" type="text" required>
+                        </div>
+                        <div class="col-6 field">
+                            <label>Years</label>
+                            <input name="years" type="text" required>
+                        </div>
+                        <div class="col-6 field">
+                            <label>City</label>
+                            <input name="education-city" type="text" required>
+                        </div>
+                        <div class="col-12 text-end">
+                            <button type="button" class="remove-education">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </div>
+                        <hr class="ms-3 mb-2 mt-3">
                     </div>
-                    <div class="col-6 field">
-                        <label>Institute</label>
-                        <input name="institute" type="text" placeholder="" required>
-                    </div>
-                    <div class="col-6 field">
-                        <label>Years</label>
-                        <input name="years" type="text" placeholder="" required>
-                    </div>
-                    <div class="col-6 field">
-                        <label>City</label>
-                        <input name="Education-city" type="text" placeholder="" required>
-                    </div>
-                </div>
+                </template>
+
+                <button class="text-start add-btn col-12" type="button" id="education-add-btn">+ Add Education</button>
             </div>
 
             <!-- Step 3: Work Experience -->
-            <div class="form-step card">
+            <div class="form-step card" id="work-step">
                 <h2>Work Experience</h2>
-                <div class="row">
-                    <div class="col-6 field">
-                        <label>Role</label>
-                        <input name="work-role" type="text" placeholder="" required>
+                <div id="work-container"></div>
+
+                <template id="work-template">
+                    <div class="inputs-entry row">
+                        <div class="col-6 field">
+                            <label>Role</label>
+                            <input name="work-role" type="text" required>
+                        </div>
+                        <div class="col-6 field">
+                            <label>Company</label>
+                            <input name="company" type="text" required>
+                        </div>
+                        <div class="col-6 field">
+                            <label>Duration</label>
+                            <input name="duration" type="text" required>
+                        </div>
+                        <div class="col-6 field">
+                            <label>City</label>
+                            <input name="work-city" type="text" required>
+                        </div>
+                        <div class="col-12">
+                            <label>Description</label>
+                            <textarea name="description" placeholder="Describe your work experience..."></textarea>
+                        </div>
+                        <div class="col-12 text-end">
+                            <button type="button" class="remove-education">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </div>
+                        <hr class="ms-3 mb-2 mt-3">
                     </div>
-                    <div class="col-6 field">
-                        <label>Company</label>
-                        <input name="company" type="text" placeholder="" required>
-                    </div>
-                    <div class="col-6 field">
-                        <label>Duration</label>
-                        <input name="duration" type="text" placeholder="" required>
-                    </div>
-                    <div class="col-6 field">
-                        <label>City</label>
-                        <input name="work-city" type="text" placeholder="" required>
-                    </div>
-                    <div class="col-12">
-                        <label>Description</label>
-                        <textarea name="description" placeholder="Describe your work experience..."></textarea>
-                    </div>
-                </div>
+                </template>
+
+                <button class="text-start add-btn col-12" type="button" id="work-add-btn">+ Add Work</button>
             </div>
+
 
             <!-- Step 4: Skills -->
             <div class="form-step card">
@@ -115,7 +138,7 @@
             </div>
 
             <!-- Step 5: Projects -->
-            <div class="form-step card">
+            <!-- <div class="form-step card">
                 <h2>Projects</h2>
                 <div class="row">
                     <div class="col-6 field">
@@ -135,7 +158,7 @@
                         <input name="project-role" type="text" placeholder="">
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Buttons -->
             <div class="buttons">
@@ -146,7 +169,7 @@
         </form>
     </div>
 
-    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/form.js"></script>
 </body>
 
 </html>

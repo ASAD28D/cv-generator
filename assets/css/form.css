@@ -25,6 +25,39 @@ body {
     }
 }
 
+input {
+    margin-bottom: 10px;
+}
+
+hr {
+    width: 96% !important;
+}
+
+.inputs-entry {
+    margin-top: 10px;
+}
+
+.inputs-entry button {
+    padding: 12px 14px !important;
+}
+
+.work-add-btn,
+.add-btn {
+    background: transparent !important;
+    color: #6b5bff;
+    border-top: 1px solid #6b5bff !important;
+    border-bottom: 1px solid #6b5bff !important;
+    border-radius: 0px;
+}
+
+.work-add-btn,
+.add-btn:hover {
+    background-color: rgba(138, 0, 218, 0.05) !important;
+    transform: translateY(0px) !important;
+    box-shadow: none !important;
+
+}
+
 .form-container {
     width: 70%;
     max-width: 95%;
@@ -145,5 +178,4 @@ button:hover {
 
 button#prevBtn {
     background: linear-gradient(135deg, #39ff14, #00bfff);
-    /* color: #444; */
 }

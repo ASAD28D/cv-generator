@@ -150,10 +150,6 @@ textarea {
     flex-direction: column;
 }
 
-.field {
-    flex: 1 1 48%;
-}
-
 .buttons {
     display: flex;
     justify-content: space-between;

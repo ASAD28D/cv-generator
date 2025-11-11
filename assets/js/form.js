@@ -57,18 +57,13 @@ function saveData() {
   localStorage.setItem('cvData', JSON.stringify(data));
 }
 
-console.log(document.getElementById('education-step'))
-
 function addInputs(addBtnId, containerId, templateId) {
   const addBtn = document.getElementById(addBtnId);
   const container = document.getElementById(containerId);
   const template = document.getElementById(templateId);
-  let count = 0;
 
-  const firstClone = template.content.cloneNode(true);
-  const firstRemoveBtn = firstClone.querySelector('.remove-education');
-  if (firstRemoveBtn) firstRemoveBtn.remove();
-  container.appendChild(firstClone);
+  let count = 1;
+  localStorage.setItem(`${containerId}-count`, count);
 
   addBtn.addEventListener('click', () => {
     const clone = template.content.cloneNode(true);
@@ -77,15 +72,18 @@ function addInputs(addBtnId, containerId, templateId) {
     const inputs = clone.querySelectorAll('input, textarea');
     inputs.forEach(input => {
       const baseName = input.getAttribute('name');
-      input.name = `${baseName}-${count}`;
+      input.name = `${baseName}_${count}`;
     });
 
     container.appendChild(clone);
+    localStorage.setItem(`${containerId}-count`, count);
   });
 
   container.addEventListener('click', (e) => {
     if (e.target.closest('.remove-education')) {
       e.target.closest('.inputs-entry').remove();
+      count--
+      localStorage.setItem(`${containerId}-count`, count);
     }
   });
 }

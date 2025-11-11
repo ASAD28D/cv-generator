@@ -29,50 +29,76 @@
             <div class="form-step active card">
                 <h2>Personal Info</h2>
                 <div class="row">
-                    <div class="col-6 field">
-                        <label>Full Name</label>
-                        <input name="full-name" type="text" placeholder="" required>
+                    <div class="col-12">
+                        <label>Name</label>
+                        <div style="gap: 20px;" class="d-flex">
+                            <input name="first_name" type="text" placeholder="first name" required>
+                            <input name="last_name" type="text" placeholder="last name" required>
+                        </div>
                     </div>
-                    <div class="col-6 field">
+                    <div class="col-6">
+                        <label>Profession</label>
+                        <input name="Profession" type="text" placeholder="Profession" required>
+                    </div>
+                    <div class="col-6">
                         <label>Email</label>
-                        <input name="email" type="email" placeholder="" required>
+                        <input name="email" type="email" placeholder="email" required>
                     </div>
-                    <div class="col-6 field">
+                    <div class="col-6">
                         <label>Phone</label>
-                        <input name="phone" type="text" placeholder="" required>
+                        <input name="phone" type="text" placeholder="phone" required>
                     </div>
-                    <div class="col-6 field">
+                    <div class="col-6">
                         <label>Address</label>
-                        <input name="address" type="text" placeholder="" required>
+                        <input name="address" type="text" placeholder="address" required>
                     </div>
-                    <div class="col-12 feild">
+                    <div class="col-12">
                         <label>About You</label>
-                        <textarea name="about" placeholder="" required></textarea>
+                        <textarea name="about" placeholder="about" required></textarea>
                     </div>
                 </div>
             </div>
             <!-- Step 2: Education -->
             <div class="form-step card" id="education-step">
                 <h2 class="mb-0">Education</h2>
-                <div id="education-container"></div>
-
+                <div id="education-container">
+                    <div class="inputs-entry row">
+                        <div class="col-6 ">
+                            <label>Degree</label>
+                            <input name="degree_1" placeholder="degree" type="text" required>
+                        </div>
+                        <div class="col-6 ">
+                            <label>Institute</label>
+                            <input name="institute_1" placeholder="institute" type="text" required>
+                        </div>
+                        <div class="col-6 ">
+                            <label>Years</label>
+                            <input name="years_1" placeholder="e.g., 2023 - 2025" type="text" required>
+                        </div>
+                        <div class="col-6 ">
+                            <label>City</label>
+                            <input name="education_city_1" placeholder="city" type="text" required>
+                        </div>
+                        <hr class="ms-3 mb-2 mt-3">
+                    </div>
+                </div>
                 <template id="education-template">
                     <div class="inputs-entry row">
-                        <div class="col-6 field">
+                        <div class="col-6 ">
                             <label>Degree</label>
-                            <input name="degree" type="text" required>
+                            <input name="degree" placeholder="degree" type="text" required>
                         </div>
-                        <div class="col-6 field">
+                        <div class="col-6 ">
                             <label>Institute</label>
-                            <input name="institute" type="text" required>
+                            <input name="institute" placeholder="institute" type="text" required>
                         </div>
-                        <div class="col-6 field">
+                        <div class="col-6 ">
                             <label>Years</label>
-                            <input name="years" type="text" required>
+                            <input name="years" placeholder="e.g., 2023 - 2025" type="text" required>
                         </div>
-                        <div class="col-6 field">
+                        <div class="col-6 ">
                             <label>City</label>
-                            <input name="education-city" type="text" required>
+                            <input name="education_city" placeholder="city" type="text" required>
                         </div>
                         <div class="col-12 text-end">
                             <button type="button" class="remove-education">
@@ -89,25 +115,48 @@
             <!-- Step 3: Work Experience -->
             <div class="form-step card" id="work-step">
                 <h2>Work Experience</h2>
-                <div id="work-container"></div>
-
+                <div id="work-container">
+                    <div class="inputs-entry row">
+                        <div class="col-6">
+                            <label>Role</label>
+                            <input name="work_role_1" placeholder="Role" type="text" required>
+                        </div>
+                        <div class="col-6">
+                            <label>Company</label>
+                            <input name="company_1" placeholder="company" type="text" required>
+                        </div>
+                        <div class="col-6">
+                            <label>Duration</label>
+                            <input name="duration_1" placeholder="duration" type="text" required>
+                        </div>
+                        <div class="col-6">
+                            <label>City</label>
+                            <input name="work_city_1" placeholder="city" type="text" required>
+                        </div>
+                        <div class="col-12">
+                            <label>Description</label>
+                            <textarea name="description_1" placeholder="Describe your work experience..."></textarea>
+                        </div>
+                        <hr class="ms-3 mb-2 mt-3">
+                    </div>
+                </div>
                 <template id="work-template">
                     <div class="inputs-entry row">
-                        <div class="col-6 field">
+                        <div class="col-6">
                             <label>Role</label>
-                            <input name="work-role" type="text" required>
+                            <input name="work_role" placeholder="Role" type="text" required>
                         </div>
-                        <div class="col-6 field">
+                        <div class="col-6">
                             <label>Company</label>
-                            <input name="company" type="text" required>
+                            <input name="company" placeholder="company" type="text" required>
                         </div>
-                        <div class="col-6 field">
+                        <div class="col-6">
                             <label>Duration</label>
-                            <input name="duration" type="text" required>
+                            <input name="duration" placeholder="duration" type="text" required>
                         </div>
-                        <div class="col-6 field">
+                        <div class="col-6">
                             <label>City</label>
-                            <input name="work-city" type="text" required>
+                            <input name="work_city" placeholder="city" type="text" required>
                         </div>
                         <div class="col-12">
                             <label>Description</label>
@@ -132,33 +181,10 @@
                 <div class="row">
                     <div class="col-12">
                         <label>Skills</label>
-                        <textarea name="skills" placeholder=""></textarea>
+                        <textarea name="skills" placeholder="skills"></textarea>
                     </div>
                 </div>
             </div>
-
-            <!-- Step 5: Projects -->
-            <!-- <div class="form-step card">
-                <h2>Projects</h2>
-                <div class="row">
-                    <div class="col-6 field">
-                        <label>Project Title</label>
-                        <input name="project-title" type="text" placeholder="">
-                    </div>
-                    <div class="col-12">
-                        <label>Description</label>
-                        <textarea name="project-description" placeholder=""></textarea>
-                    </div>
-                    <div class="col-6 field">
-                        <label>Technologies Used</label>
-                        <input name="technologies-used" type="text" placeholder="">
-                    </div>
-                    <div class="col-6 field">
-                        <label>Role</label>
-                        <input name="project-role" type="text" placeholder="">
-                    </div>
-                </div>
-            </div> -->
 
             <!-- Buttons -->
             <div class="buttons">
@@ -169,7 +195,7 @@
         </form>
     </div>
 
-    <script src="/assets/js/form.js"></script>
+    <script type="module" src="/assets/js/form.js"></script>
 </body>
 
 </html>

@@ -32,8 +32,8 @@ nextBtn.addEventListener('click', (e) => {
     currentStep++;
     updateStep();
   } else {
-    alert('Form Completed! All data saved.');
     console.log(JSON.parse(localStorage.getItem('cvData')));
+    window.location = "/templates/template.html"
   }
 });
 
@@ -63,7 +63,6 @@ function addInputs(addBtnId, containerId, templateId) {
   const template = document.getElementById(templateId);
 
   let count = 1;
-  localStorage.setItem(`${containerId}-count`, count);
 
   addBtn.addEventListener('click', () => {
     const clone = template.content.cloneNode(true);
@@ -80,7 +79,7 @@ function addInputs(addBtnId, containerId, templateId) {
   });
 
   container.addEventListener('click', (e) => {
-    if (e.target.closest('.remove-education')) {
+    if (e.target.closest('.remove-additional')) {
       e.target.closest('.inputs-entry').remove();
       count--
       localStorage.setItem(`${containerId}-count`, count);
@@ -90,3 +89,4 @@ function addInputs(addBtnId, containerId, templateId) {
 
 addInputs('education-add-btn', 'education-container', 'education-template');
 addInputs('work-add-btn', 'work-container', 'work-template');
+

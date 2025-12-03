@@ -15,125 +15,535 @@
 
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-5">
-                <button class="output-btn bg-dark border-0 text-white px-3 py-2 rounded-2">enter data</button>
-            </div>
-
-            <div class="col-7 templates-container"></div>
-            <template id="cv-template-1">
-                <div class="resume container">
-                    <div class="row py-4">
-                        <div class="col-1 px-0 bg-dark">
-                        </div>
-                        <div class="col-7 pt-4">
-                            <div class="first-name" style="font-size:14px;color:var(--muted);font-weight:700">ALEXA
+        <div class="row g-5 justify-content-evenly">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="display-4 fw-bold text-white choose-text">choose your <br> template</h1>
+                    </div>
+                    <div class="col-12 text-center p-4">
+                        <div class="row gap-4">
+                            <div class="col-5 p-3 rounded-4 template-select-div">
+                                <img class="w-100 template-1-btn rounded-3" src="/assets/images/template_1.png" alt="">
                             </div>
-                            <div class="last-name name">RICHARDSON</div>
-                            <div class="profession">MARKET RESEARCH ANALYST</div>
-                        </div>
-                        <div class="col-4 bg-dark py-2 ali">
-                            <div class="section-title text-white">Contact</div>
-                            <ul class="contact-list">
-                                <li><i class="bi bi-telephone-fill"></i> <span class="phone"> +1 123 456 7890</span>
-                                </li>
-                                <li><i class="bi bi-envelope-fill"></i> <span class="email">
-                                        youremail@email.com</span>
-                                </li>
-                                <li><i class="bi bi-geo-alt-fill"></i> <span class="address"> Street, City,
-                                        Country</span>
-                                </li>
-                            </ul>
+                            <div class="col-5 p-3 rounded-4 template-select-div">
+                                <img class="w-100 template-2-btn rounded-3" src="/assets/images/template_2.png" alt="">
+                            </div>
+                            <div class="col-5 p-3 rounded-4 template-select-div">
+                                <img class="w-100 template-3-btn rounded-3" src="/assets/images/template_3.png" alt="">
+                            </div>
+                            <div class="col-5 p-3 rounded-4 template-select-div">
+                                <img class="w-100 template-4-btn rounded-3" src="/assets/images/template_4.png" alt="">
+                            </div>
+                            <div class="col-5 p-3 rounded-4 template-select-div">
+                                <img class="w-100 template-5-btn rounded-3" src="/assets/images/template_5.png" alt="">
+                            </div>
                         </div>
                     </div>
-                    <div class="row flex-wrap position-relative">
-                        <div class="col-5 left py-3 px-3">
-                            <div class="d-flex flex-column ">
-                                <div>
-                                    <div class="section-title">Profile</div>
-                                    <p class="profile-text">Reliable and detail-oriented market research analyst
-                                        with
-                                        experience
-                                        in
-                                        quantitative and qualitative analysis. Skilled at turning data into
-                                        actionable
-                                        insights,
-                                        creating reports and presenting findings to stakeholders.</p>
+                </div>
+            </div>
+
+            <div class="col-6 d-flex flex-column gap-5 templates-container rounded-4 py-4"></div>
+            <!-- ===============================================================================================================
+        
+             TEMPLATE 1
+
+            =============================================================================================================== -->
+            <template class="cv-template-1">
+                <div class="cv-1-wrapper">
+                    <div class="resume container">
+                        <div class="row py-4">
+                            <div class="col-1 px-0 bg-dark">
+                            </div>
+                            <div class="col-7 pt-4">
+                                <div class="first-name" style="font-size:14px;color:var(--muted);font-weight:700">ALEXA
                                 </div>
+                                <div class="last-name name">RICHARDSON</div>
+                                <div class="profession">MARKET RESEARCH ANALYST</div>
+                            </div>
+                            <div class="col-4 bg-dark py-2 ali">
+                                <div class="section-title text-white">Contact</div>
+                                <ul class="contact-list">
+                                    <li><i class="bi bi-telephone-fill"></i> <span class="phone"> +1 123 456 7890</span>
+                                    </li>
+                                    <li><i class="bi bi-envelope-fill"></i> <span class="email">
+                                            youremail@email.com</span>
+                                    </li>
+                                    <li><i class="bi bi-geo-alt-fill"></i> <span class="address"> Street, City,
+                                            Country</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row flex-wrap position-relative">
+                            <div class="col-5 left py-3 px-3">
+                                <div class="d-flex flex-column ">
+                                    <div>
+                                        <div class="section-title">Profile</div>
+                                        <p class="profile-text">Reliable and detail-oriented market research analyst
+                                            with
+                                            experience
+                                            in
+                                            quantitative and qualitative analysis. Skilled at turning data into
+                                            actionable
+                                            insights,
+                                            creating reports and presenting findings to stakeholders.</p>
+                                    </div>
 
-                                <div class="divider"></div>
+                                    <div class="divider"></div>
 
-                                <div>
-                                    <div class="section-title">Education</div>
+                                    <div>
+                                        <div class="section-title mb-0">Education</div>
+                                        <div class="edu-items-container"></div>
+                                        <template class="edu-template">
+                                            <div class="edu-item">
+                                                <div class="edu-year pt-2">2012 - 2016</div>
+                                                <div class="edu-degree">Masters in Computer Engi.</div>
+                                                <div class="d-flex" style="font-size:12px;color:var(--muted)">
+                                                    <span class="institute pe-1">University </span> / <span
+                                                        class="ps-1 edu-city"> city</span>
+                                                </div>
+                                            </div>
+                                        </template>
+                                    </div>
+
+                                    <div class="divider"></div>
+
+                                    <div>
+                                        <div class="section-title">Skills</div>
+                                        <div class="skills">
+                                            MS Office
+                                            <br>
+                                            Creative Suite
+                                            <br>
+                                            Email Marketing
+                                            <br>
+                                            digital Marketing
+                                            <br>
+                                            Autocad (R)
+                                            <br>
+                                            Autocad (R)
+                                        </div>
+                                    </div>
+                                    <div style="flex:1"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-7 right py-3 px-2">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <p class="section-title">WORK EXPERIENCE</p>
+                                    </div>
+                                </div>
+                                <div class="work-items-container">
+                                    <template id="work-item-template">
+                                        <div class="work-item">
+                                            <div class="text-end">
+                                                <div class="work-year">2004 <br> - <br> Present</div>
+                                            </div>
+                                            <div class="work-content">
+                                                <div class="job-title">Job Position / Title</div>
+                                                <div class="d-flex job-company"><span class="work-company pe-1">Company
+                                                        Name
+                                                    </span> / <span class="ps-1 work-city"> Washington Dc, Usa</span>
+                                                </div>
+                                                <div class="job-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit.
+                                                    Maecenas
+                                                    vitae
+                                                    massa
+                                                    id turpis posuere vehicula. Proin in nulla est. Praesent convallis,
+                                                    orci
+                                                    sed
+                                                    laoreet
+                                                    convallis,
+                                                    libero leo varius elit, nec blandit urna felis nec est.</div>
+                                            </div>
+                                        </div>
+                                    </template>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+            <!-- ===============================================================================================================
+        
+             TEMPLATE 2 
+
+            =============================================================================================================== -->
+            <template class="cv-template-2">
+                <div class="cv-2-wrapper">
+                    <div class="resume container px-0">
+                        <div class="header-section">
+                            <div class="name">
+                                <div class="first-name">ALEXA</div>
+                                <div class="last-name">RICHARDSON</div>
+                            </div>
+                            <div class="profession">MARKET RESEARCH ANALYST</div>
+                            <div class="contact-row">
+                                <div class="contact-item">
+                                    <i class="bi bi-telephone-fill"></i>
+                                    <span class="phone">+1 123 456 7890</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="bi bi-envelope-fill"></i>
+                                    <span class="email">youremail@email.com</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <span class="address">Street, City, Country</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main-content">
+                            <div class="left">
+                                <div class="section-title">Profile</div>
+                                <p class="profile-text">Reliable and detail-oriented market research analyst with
+                                    experience
+                                    in quantitative and qualitative analysis. Skilled at turning data into
+                                    actionable
+                                    insights, creating reports and presenting findings to stakeholders.</p>
+
+                                <div class="section-title">Education</div>
+                                <div class="edu-items-container"></div>
+                                <template class="edu-template">
                                     <div class="edu-item">
                                         <div class="edu-year">2012 - 2016</div>
                                         <div class="edu-degree">Masters in Computer Engi.</div>
-                                        <div class="edu-institution" style="font-size:12px;color:var(--muted)">
-                                            University /
-                                            College
-                                            Name
+                                        <div class="edu-location">
+                                            <span class="institute">University</span> / <span
+                                                class="edu-city">city</span>
                                         </div>
                                     </div>
-                                    <div class="edu-item">
-                                        <div class="edu-year">2009 - 2012</div>
-                                        <div class="edu-degree">Bachelor of Arts</div>
-                                        <div class="edu-institution" style="font-size:12px;color:var(--muted)">
-                                            University /
-                                            College
-                                            Name
+                                </template>
+
+                                <div class="section-title">Skills</div>
+                                <div class="skills">
+                                    <span class="skill-item">MS Office</span>
+                                    <span class="skill-item">Creative Suite</span>
+                                    <span class="skill-item">Email Marketing</span>
+                                    <span class="skill-item">Digital Marketing</span>
+                                    <span class="skill-item">Autocad (R)</span>
+                                </div>
+                            </div>
+
+                            <div class="right">
+                                <div class="section-title">Work Experience</div>
+                                <div class="work-items-container"></div>
+                                <template id="work-item-template">
+                                    <div class="work-item">
+                                        <div class="work-year">2004 - Present</div>
+                                        <div class="job-title">Job Position / Title</div>
+                                        <div class="job-company">
+                                            <span class="work-company">Company Name</span> / <span
+                                                class="work-city">Washington Dc, Usa</span>
                                         </div>
+                                        <div class="job-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit.
+                                            Maecenas vitae massa id turpis posuere vehicula. Proin in nulla est.
+                                            Praesent
+                                            convallis, orci sed laoreet convallis, libero leo varius elit, nec
+                                            blandit urna
+                                            felis nec est.</div>
                                     </div>
-                                </div>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+            <!-- =============================================================================================================
+        
+             TEMPLATE 3 
 
-                                <div class="divider"></div>
-
-                                <div>
-                                    <div class="section-title">Skills</div>
-                                    <div class="skill-row">
-                                        <div class="skill-name">MS Office</div>
-                                    </div>
-                                    <div class="skill-row">
-                                        <div class="skill-name">Creative Suite</div>
-                                    </div>
-                                    <div class="skill-row">
-                                        <div class="skill-name">Email Marketing</div>
-                                    </div>
-                                    <div class="skill-row">
-                                        <div class="skill-name">digital Marketing</div>
-                                    </div>
-                                    <div class="skill-row">
-                                        <div class="skill-name">Autocad (R)</div>
-                                    </div>
-                                </div>
-                                <div style="flex:1"></div>
+            =============================================================================================================== -->
+            <template class="cv-template-3">
+                <div class="cv-3-wrapper">
+                    <div class="resume container px-0">
+                        <div class="header-section">
+                            <div class="name">
+                                <span class="first-name">ALEXA</span>
+                                <span class="last-name">RICHARDSON</span>
+                            </div>
+                            <div class="profession">MARKET RESEARCH ANALYST</div>
+                            <div class="contact-grid">
+                                <span><i class="bi bi-telephone-fill"></i><span class="phone">+1 123 456
+                                        7890</span></span>
+                                <span><i class="bi bi-envelope-fill"></i><span
+                                        class="email">youremail@email.com</span></span>
+                                <span><i class="bi bi-geo-alt-fill"></i><span class="address">Street, City,
+                                        Country</span></span>
                             </div>
                         </div>
 
-                        <div class="col-7 right py-3 px-2">
-                            <div class="d-flex justify-content-between align-items-start">
+                        <div class="content-wrapper">
+                            <div class="left">
                                 <div>
-                                    <p class="section-title">WORK EXPERIENCE</p>
+                                    <div class="section-title">Profile</div>
+                                    <p class="profile-text">Reliable and detail-oriented market research analyst with
+                                        experience
+                                        in quantitative and qualitative analysis. Skilled at turning data into
+                                        actionable
+                                        insights, creating reports and presenting findings to stakeholders.</p>
+                                </div>
+
+                                <div style="flex: 1;">
+                                    <div class="section-title">Work Experience</div>
+                                    <div class="work-items-container"></div>
+                                    <template id="work-item-template">
+                                        <div class="work-item">
+                                            <div class="work-header p-3">
+                                                <div class="work-left">
+                                                    <div class="job-title">Job Position / Title</div>
+                                                    <div class="work-year">2004 - Present</div>
+                                                </div>
+                                                <div class="job-company py-2">
+                                                    <span class="work-company">Company Name</span> / <span
+                                                        class="work-city">Washington Dc, Usa</span>
+                                                </div>
+                                                <div class="job-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit.
+                                                    Maecenas vitae massa id turpis posuere vehicula. Proin in nulla est.
+                                                    Praesent
+                                                    convallis, orci sed laoreet convallis, libero leo varius elit, nec
+                                                    blandit
+                                                    urna
+                                                    felis nec est.</div>
+                                            </div>
+                                        </div>
+                                    </template>
                                 </div>
                             </div>
-                            <div class="work-items-container">
+
+                            <div class="right">
+                                <div>
+                                    <div class="section-title">Education</div>
+                                    <div class="edu-items-container"></div>
+                                    <template class="edu-template">
+                                        <div class="edu-item">
+                                            <div class="edu-degree">Masters in Computer Engi.</div>
+                                            <div class="edu-location">
+                                                <span class="institute">University</span> / <span
+                                                    class="edu-city">city</span>
+                                            </div>
+                                            <div class="edu-year">2012 - 2016</div>
+                                        </div>
+                                    </template>
+                                </div>
+
+                                <div>
+                                    <div class="section-title">Skills</div>
+                                    <div class="skills">
+                                        <div class="skill-item">MS Office</div>
+                                        <div class="skill-item">Creative Suite</div>
+                                        <div class="skill-item">Email Marketing</div>
+                                        <div class="skill-item">Digital Marketing</div>
+                                        <div class="skill-item">Autocad (R)</div>
+                                        <div class="skill-item">Photoshop</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+            <!-- =============================================================================================================
+        
+             TEMPLATE 4 
+
+            =============================================================================================================== -->
+            <template class="cv-template-4">
+                <div class="cv-4-wrapper">
+                    <div class="resume container px-0">
+                        <!-- Horizontal Top Banner -->
+                        <div class="header-section">
+                            <div class="accent-bar"></div>
+                            <div class="header-content">
+                                <div>
+                                    <div class="name">
+                                        <span class="first-name">ALEXA</span>
+                                        <br>
+                                        <span class="last-name">RICHARDSON</span>
+                                    </div>
+                                    <div class="profession">MARKET RESEARCH ANALYST</div>
+                                </div>
+                                <div class="contact-section mx-auto">
+                                    <div class="contact-mini">
+                                        <span><i class="bi bi-telephone-fill"></i><span class="phone">+1 123 456
+                                                7890</span></span>
+                                        <span><i class="bi bi-envelope-fill"></i><span
+                                                class="email">youremail@email.com</span></span>
+                                    </div>
+                                    <div style="padding-top: 16px;">
+                                        <span><i class="bi bi-geo-alt-fill"></i><span class="address">Street,
+                                                City,Country</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Main Content: Left Sidebar + Right Content -->
+                        <div class="content-wrapper">
+                            <!-- Left Sidebar -->
+                            <div class="left">
+                                <div>
+                                    <div class="section-title">Profile</div>
+                                    <p class="profile-text">Reliable and detail-oriented market research analyst with
+                                        experience
+                                        in quantitative and qualitative analysis. Skilled at turning data into
+                                        actionable
+                                        insights, creating reports and presenting findings to stakeholders.</p>
+                                </div>
+
+                                <div>
+                                    <div class="section-title">Education</div>
+                                    <div class="edu-items-container"></div>
+                                    <template class="edu-template">
+                                        <div class="edu-item">
+                                            <div class="edu-degree">Masters in Computer Engi.</div>
+                                            <div class="edu-location">
+                                                <span class="institute">University</span> / <span
+                                                    class="edu-city">city</span>
+                                            </div>
+                                            <div class="edu-year">2012 - 2016</div>
+                                        </div>
+                                    </template>
+                                </div>
+
+                                <div>
+                                    <div class="section-title">Skills</div>
+                                    <div class="skills">
+                                        <div class="skill-item">MS Office</div>
+                                        <div class="skill-item">Creative Suite</div>
+                                        <div class="skill-item">Email Marketing</div>
+                                        <div class="skill-item">Autocad (R)</div>
+                                        <div class="skill-item">Digital Marketing</div>
+                                        <div class="skill-item">Photoshop</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right Main Content -->
+                            <div class="right">
+                                <div class="section-title">Work Experience</div>
+                                <div class="work-items-container"></div>
                                 <template id="work-item-template">
                                     <div class="work-item">
-                                        <div class="text-end">
-                                            <div class="work-year">2004 <br> - <br> Present</div>
+                                        <div class="work-year">2004 - Present</div>
+                                        <div class="job-title">Job Position / Title</div>
+                                        <div class="job-company">
+                                            <span class="work-company">Company Name</span> / <span
+                                                class="work-city">Washington
+                                                Dc, Usa</span>
                                         </div>
-                                        <div class="work-content">
-                                            <div class="job-title">Job Position / Title</div>
-                                            <div class="job-company">Company Name / Washington Dc, Usa</div>
-                                            <div class="job-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                elit.
-                                                Maecenas
-                                                vitae
-                                                massa
-                                                id turpis posuere vehicula. Proin in nulla est. Praesent convallis, orci
-                                                sed
-                                                laoreet
-                                                convallis,
-                                                libero leo varius elit, nec blandit urna felis nec est.</div>
+                                        <div class="job-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Maecenas
+                                            vitae massa id turpis posuere vehicula. Proin in nulla est. Praesent
+                                            convallis,
+                                            orci
+                                            sed laoreet convallis, libero leo varius elit, nec blandit urna felis nec
+                                            est.
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+            <!-- =============================================================================================================
+        
+             TEMPLATE 5 
+
+            =============================================================================================================== -->
+            <template class="cv-template-5">
+                <div class="cv-5-wrapper">
+                    <div class="resume container px-0">
+                        <!-- Bold Dark Sidebar - 42% -->
+                        <div class="left">
+                            <div>
+                                <div class="name">
+                                    <span class="first-name">ALEXA</span>
+                                    <span class="last-name">RICHARDSON</span>
+                                </div>
+                                <div class="profession">MARKET RESEARCH ANALYST</div>
+                            </div>
+
+                            <div>
+                                <div class="section-title">Contact</div>
+                                <ul class="contact-list">
+                                    <li><i class="bi bi-telephone-fill"></i><span class="phone">+1 123 456 7890</span>
+                                    </li>
+                                    <li><i class="bi bi-envelope-fill"></i><span
+                                            class="email">youremail@email.com</span>
+                                    </li>
+                                    <li><i class="bi bi-geo-alt-fill"></i><span class="address">Street, City,
+                                            Country</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <div class="section-title">Education</div>
+                                <div class="edu-items-container"></div>
+                                <template class="edu-template">
+                                    <div class="edu-item mb-3">
+                                        <div class="edu-degree">Masters in Computer Engi.</div>
+                                        <div class="edu-location">
+                                            <span class="institute">University</span> / <span
+                                                class="edu-city">city</span>
+                                        </div>
+                                        <div class="edu-year">2012 - 2016</div>
+                                    </div>
+                                </template>
+                            </div>
+
+                            <div>
+                                <div class="section-title">Skills</div>
+                                <div class="skills">
+                                    <div class="skill-item">MS Office</div>
+                                    <div class="skill-item">Creative Suite</div>
+                                    <div class="skill-item">Email Marketing</div>
+                                    <div class="skill-item">Digital Marketing</div>
+                                    <div class="skill-item">Autocad (R)</div>
+                                    <div class="skill-item">Photoshop</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Main Content Area - 58% -->
+                        <div class="right">
+                            <div>
+                                <div class="section-title">Profile</div>
+                                <p class="profile-text">Reliable and detail-oriented market research analyst with
+                                    experience
+                                    in
+                                    quantitative and qualitative analysis. Skilled at turning data into actionable
+                                    insights,
+                                    creating reports and presenting findings to stakeholders.</p>
+                            </div>
+
+                            <div style="flex: 1;">
+                                <div class="section-title">Work Experience</div>
+                                <div class="work-items-container"></div>
+                                <template id="work-item-template">
+                                    <div class="work-item mb-3">
+                                        <div class="work-year">2004 - Present</div>
+                                        <div class="job-title">Job Position / Title</div>
+                                        <div class="job-company">
+                                            <span class="work-company">Company Name</span> / <span
+                                                class="work-city">Washington
+                                                Dc, Usa</span>
+                                        </div>
+                                        <div class="job-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Maecenas
+                                            vitae massa id turpis posuere vehicula. Proin in nulla est. Praesent
+                                            convallis,
+                                            orci
+                                            sed laoreet convallis, libero leo varius elit, nec blandit urna felis nec
+                                            est.
                                         </div>
                                     </div>
                                 </template>
@@ -144,8 +554,8 @@
             </template>
         </div>
     </div>
-    </div>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="/assets/js/template.js"></script>
 </body>
 

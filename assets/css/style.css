@@ -1,219 +1,1181 @@
-:root {
-    --accent: #111112;
-    --muted: #888;
-    --paper: #f6f6f6;
-    --line: #e0e0e0;
-}
+ :root {
+     --accent: #111112;
+     --muted: #888;
+     --paper: #f6f6f6;
+     --line: #e0e0e0;
+ }
 
-body {
-    font-family: 'Open Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-    background: white;
-    color: #222;
-    padding: 30px;
-}
+ body {
+     font-family: 'Poppins', sans-serif;
+     background: linear-gradient(135deg, #000000, #0a2f35, #0e4d64, #45a29e, #66fcf1);
+     background-size: 600% 600%;
+     animation: gradientFlow 16s linear infinite;
+     padding: 60px;
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     color: #222;
 
-.resume {
-    height: 810px;
-    width: 572px;  
-    /* margin: 0 auto; */
-    border: 1px solid #dcdcdc;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.03);
-    background: white;
-    font-size: 14px;
-    display: flex;
-    /* flex-wrap: wrap; */
-    flex-direction: column;
-}
+ }
 
-.left {
-    width: 34%;
-    background: var(--paper);
-    padding: 24px 18px;
-    border-right: 1px solid var(--line);
-    box-sizing: border-box;
-}
+ @keyframes gradientFlow {
+     0% {
+         background-position: 0% 50%;
+     }
 
-.right {
-    width: 66%;
-    padding: 24px 22px;
-    box-sizing: border-box;
-    position: relative;
-}
+     50% {
+         background-position: 100% 50%;
+     }
 
-/* Name block */
-.name {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    font-size: 34px;
-    letter-spacing: 1px;
-    margin: 6px 0 4px 0;
-    line-height: 1;
-    color: var(--accent);
-}
+     100% {
+         background-position: 0% 50%;
+     }
+ }
 
-.profession {
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 18px;
-}
+ .templates-container {
+     background-color: rgba(255, 255, 255, 0.15);
+     backdrop-filter: blur(5px);
+     border: 1px solid rgba(255, 255, 255, 0.3);
+ }
 
-/* Section title */
-.section-title {
-    font-weight: 700;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-    color: var(--accent);
-}
+ .template-select-div {
+     background-color: rgba(255, 255, 255, 0.15);
+     backdrop-filter: blur(5px);
+     border: 1px solid rgba(255, 255, 255, 0.3);
+ }
 
-.profile-text {
-    font-size: 12px;
-    color: #333;
-    line-height: 1.45;
-}
+ .choose-text {
+     background: linear-gradient(160deg, #39ff14 20%, #ffffff 50%);
+     -webkit-background-clip: text;
+     background-clip: text;
+     color: transparent;
+     -webkit-text-fill-color: transparent;
+ }
 
-.divider {
-    height: 1px;
-    background: var(--line);
-    margin-bottom: 10px;
-}
+ /* =============================================================================================================== */
 
-/* Education */
-.edu-item {
-    font-size: 13px;
-    margin-bottom: 12px;
-}
+ /* TEMPLATE 1 STYLES */
 
-.edu-year {
-    font-weight: 700;
-    color: var(--accent);
-}
+ /* =============================================================================================================== */
+ .templates-container .cv-1-wrapper .resume {
+     height: 810px;
+     width: 572px;
+     border: 1px solid #dcdcdc;
+     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.03);
+     background: white;
+     font-size: 14px;
+     display: flex;
+     flex-direction: column;
+ }
 
-.edu-degree {
-    font-weight: 600;
-}
+ .templates-container .cv-1-wrapper .left {
+     width: 34%;
+     background: var(--paper);
+     padding: 24px 18px;
+     border-right: 1px solid var(--line);
+     box-sizing: border-box;
+ }
 
-/* Skills */
-.skill-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
+ .templates-container .cv-1-wrapper .right {
+     width: 66%;
+     padding: 24px 22px;
+     box-sizing: border-box;
+     position: relative;
+ }
 
-.skill-name {
-    font-size: 12px;
-}
+ /* Name block */
+ .templates-container .cv-1-wrapper .name {
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 800;
+     font-size: 34px;
+     letter-spacing: 1px;
+     margin: 6px 0 4px 0;
+     line-height: 1;
+     color: var(--accent);
+ }
 
-.skill-dots {
-    display: flex;
-    gap: 4px;
-}
+ .templates-container .cv-1-wrapper .profession {
+     font-size: 12px;
+     font-weight: 600;
+     color: var(--muted);
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     margin-bottom: 18px;
+ }
 
-.dot {
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background: #cfcfcf;
-}
+ /* Section title */
+ .templates-container .cv-1-wrapper .section-title {
+     font-weight: 700;
+     font-size: 18px;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     margin-bottom: 10px;
+     color: var(--accent);
+ }
 
-.dot.filled {
-    background: var(--accent);
-}
+ .templates-container .cv-1-wrapper .profile-text {
+     font-size: 12px;
+     color: #333;
+     line-height: 1.45;
+ }
 
-/* Work timeline */
-.work-item {
-    display: flex;
-    gap: 28px;
-    padding: 18px 0;
-    padding-left: 8px;
-    border-top: 1px dashed var(--line);
-    position: relative;
-}
+ .templates-container .cv-1-wrapper .divider {
+     height: 1px;
+     background: var(--line);
+     margin-bottom: 10px;
+ }
 
-.work-year {
-    /* padding-top: 4px; */
-    width: 35px;
-    line-height: 8px;
-    font-weight: 700;
-    color: var(--muted);
-    font-size: 9px;
-}
+ /* Education */
+ .templates-container .cv-1-wrapper .edu-item {
+     font-size: 13px;
+     margin-bottom: 12px;
+ }
 
-.work-content {
-    flex: 1;
-}
+ .templates-container .cv-1-wrapper .edu-year {
+     font-weight: 700;
+     color: var(--accent);
+ }
 
-.job-title {
-    font-weight: 700;
-    font-size: 14px;
-    margin-bottom: 6px;
-}
+ .templates-container .cv-1-wrapper .edu-degree {
+     font-weight: 600;
+ }
 
-.job-company {
-    font-size: 12px;
-    color: var(--muted);
-    margin-bottom: 8px;
-}
+ /* Skills */
+ .templates-container .cv-1-wrapper .skills {
+     font-size: 12px;
+     line-height: 24px;
+ }
 
-.job-desc {
-    font-size: 12px;
-    color: #333;
-    line-height: 1.45;
-}
 
-/* Contact list */
-.contact-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+ /* Work timeline */
+ .templates-container .cv-1-wrapper .work-item {
+     display: flex;
+     gap: 28px;
+     padding: 18px 0;
+     padding-left: 8px;
+     border-top: 1px dashed var(--line);
+     position: relative;
+ }
 
-.contact-list li {
-    font-size: 12px;
-    margin-bottom: 8px;
-    color: var(--muted);
-}
+ .templates-container .cv-1-wrapper .work-year {
+     width: 35px;
+     line-height: 8px;
+     font-weight: 700;
+     color: var(--muted);
+     font-size: 9px;
+ }
 
-.contact-list i {
-    margin-right: 8px;
-    color: var(--muted);
-}
+ .templates-container .cv-1-wrapper .work-content {
+     flex: 1;
+ }
 
-/* Timeline vertical line and dot */
-.work-item::before {
-    content: "";
-    position: absolute;
-    left: 55px;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    border-left: 2px solid #888;
-}
+ .templates-container .cv-1-wrapper .job-title {
+     font-weight: 700;
+     font-size: 14px;
+     margin-bottom: 6px;
+ }
 
-.work-item::after {
-    content: "";
-    position: absolute;
-    left: 51px;
-    top: 24px;
-    width: 10px;
-    height: 10px;
-    background-color: #000;
-    border-radius: 50%;
-}
+ .templates-container .cv-1-wrapper .job-company {
+     font-size: 12px;
+     color: var(--muted);
+     margin-bottom: 8px;
+ }
 
-/* Responsive */
-@media (max-width: 900px) {
-    .resume {
-        flex-direction: column;
-    }
+ .templates-container .cv-1-wrapper .job-desc {
+     font-size: 12px;
+     color: #333;
+     line-height: 1.45;
+ }
 
-    .left,
-    .right {
-        width: 100%;
-    }
-}
+ /* Contact list */
+ .templates-container .cv-1-wrapper .contact-list {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ }
+
+ .templates-container .cv-1-wrapper .contact-list li {
+     font-size: 12px;
+     margin-bottom: 8px;
+     color: var(--muted);
+ }
+
+ .templates-container .cv-1-wrapper .contact-list i {
+     margin-right: 8px;
+     color: var(--muted);
+ }
+
+ /* Timeline vertical line and dot */
+ .templates-container .cv-1-wrapper .work-item::before {
+     content: "";
+     position: absolute;
+     left: 55px;
+     top: 0;
+     bottom: 0;
+     width: 2px;
+     border-left: 2px solid #888;
+ }
+
+ .templates-container .cv-1-wrapper .work-item::after {
+     content: "";
+     position: absolute;
+     left: 51px;
+     top: 24px;
+     width: 10px;
+     height: 10px;
+     background-color: #000;
+     border-radius: 50%;
+ }
+
+ /* Responsive */
+ @media (max-width: 900px) {
+     .templates-container .cv-1-wrapper .resume {
+         flex-direction: column;
+     }
+
+     .templates-container .cv-1-wrapper .left,
+     .templates-container .cv-1-wrapper .right {
+         width: 100%;
+     }
+ }
+
+ /* =============================================================================================================== */
+
+ /* TEMPLATE 2 STYLES */
+
+ /* =============================================================================================================== */
+ .templates-container .cv-2-wrapper .resume {
+     height: 810px;
+     width: 572px;
+     border: 1px solid #dcdcdc;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+     background: white;
+     font-size: 14px;
+     display: flex;
+     flex-direction: column;
+     overflow: hidden;
+ }
+
+ .templates-container .cv-2-wrapper .header-section {
+     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+     padding: 32px 28px;
+     color: white;
+ }
+
+ .templates-container .cv-2-wrapper .name {
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 900;
+     font-size: 32px;
+     letter-spacing: 2px;
+     margin-bottom: 4px;
+     line-height: 1;
+ }
+
+ .templates-container .cv-2-wrapper .first-name {
+     display: inline;
+     font-weight: 300;
+ }
+
+ .templates-container .cv-2-wrapper .last-name {
+     display: inline;
+     font-weight: 900;
+ }
+
+ .templates-container .cv-2-wrapper .profession {
+     font-size: 13px;
+     font-weight: 400;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     margin-top: 8px;
+     opacity: 0.95;
+ }
+
+ .templates-container .cv-2-wrapper .contact-row {
+     display: flex;
+     gap: 20px;
+     margin-top: 18px;
+     flex-wrap: wrap;
+ }
+
+ .templates-container .cv-2-wrapper .contact-item {
+     display: flex;
+     align-items: center;
+     gap: 6px;
+     font-size: 11px;
+     opacity: 0.9;
+ }
+
+ .templates-container .cv-2-wrapper .contact-item i {
+     font-size: 12px;
+ }
+
+ .templates-container .cv-2-wrapper .main-content {
+     display: flex;
+     flex: 1;
+     overflow: hidden;
+ }
+
+ .templates-container .cv-2-wrapper .left {
+     width: 40%;
+     background: #fafafa;
+     padding: 24px 20px;
+     border-right: 3px solid #667eea;
+ }
+
+ .templates-container .cv-2-wrapper .right {
+     width: 60%;
+     padding: 24px 22px;
+     overflow-y: auto;
+ }
+
+ .templates-container .cv-2-wrapper .section-title {
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 700;
+     font-size: 15px;
+     text-transform: uppercase;
+     letter-spacing: 1.5px;
+     margin-bottom: 12px;
+     color: #667eea;
+     border-bottom: 2px solid #667eea;
+     padding-bottom: 6px;
+ }
+
+ .templates-container .cv-2-wrapper .profile-text {
+     font-size: 12px;
+     color: #444;
+     line-height: 1.6;
+     margin-bottom: 24px;
+ }
+
+ .templates-container .cv-2-wrapper .edu-item {
+     padding-top: 4px;
+     padding-bottom: 12px;
+     border-bottom: 1px solid #e8e8e8;
+ }
+
+ .templates-container .cv-2-wrapper .edu-item:last-child {
+     border-bottom: none;
+ }
+
+ .templates-container .cv-2-wrapper .edu-year {
+     font-weight: 700;
+     font-size: 11px;
+     color: #667eea;
+     text-transform: uppercase;
+     letter-spacing: 0.5px;
+     margin-bottom: 4px;
+ }
+
+ .templates-container .cv-2-wrapper .edu-degree {
+     font-weight: 600;
+     font-size: 13px;
+     color: #222;
+     margin-bottom: 3px;
+ }
+
+ .templates-container .cv-2-wrapper .edu-location {
+     font-size: 11px;
+     color: var(--muted);
+ }
+
+ .templates-container .cv-2-wrapper .institute {
+     font-style: italic;
+ }
+
+ .templates-container .cv-2-wrapper .skills {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 8px;
+     font-size: 11px;
+     line-height: 1.8;
+ }
+
+ .templates-container .cv-2-wrapper .skill-item {
+     background: #667eea;
+     color: white;
+     padding: 2px 8px;
+     border-radius: 12px;
+     font-weight: 500;
+ }
+
+ .templates-container .cv-2-wrapper .work-item {
+     margin-bottom: 20px;
+     border-bottom: 1px solid #e8e8e8;
+     position: relative;
+     padding-left: 20px;
+ }
+
+ .templates-container .cv-2-wrapper .work-item:last-child {
+     border-bottom: none;
+ }
+
+ .templates-container .cv-2-wrapper .work-item::before {
+     content: "";
+     position: absolute;
+     left: 0;
+     top: 6px;
+     width: 8px;
+     height: 8px;
+     background: #667eea;
+     border-radius: 50%;
+ }
+
+ .templates-container .cv-2-wrapper .work-year {
+     font-weight: 700;
+     font-size: 11px;
+     color: #667eea;
+     text-transform: uppercase;
+     margin-bottom: 6px;
+ }
+
+ .templates-container .cv-2-wrapper .job-title {
+     font-weight: 700;
+     font-size: 14px;
+     color: #222;
+     margin-bottom: 4px;
+ }
+
+ .templates-container .cv-2-wrapper .job-company {
+     font-size: 12px;
+     color: var(--muted);
+     margin-bottom: 8px;
+     font-style: italic;
+ }
+
+ .templates-container .cv-2-wrapper .work-company,
+ .templates-container .cv-2-wrapper .work-city {
+     font-style: italic;
+ }
+
+ .templates-container .cv-2-wrapper .job-desc {
+     font-size: 12px;
+     color: #444;
+     line-height: 1.5;
+ }
+
+ /* =============================================================================================================== */
+
+ /* TEMPLATE 3 STYLES */
+
+ /* =============================================================================================================== */
+ .templates-container .cv-3-wrapper .resume {
+     height: 810px;
+     width: 572px;
+     border: none;
+     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+     background: white;
+     font-size: 14px;
+     display: flex;
+     flex-direction: column;
+     overflow: hidden;
+ }
+
+ /* Compact Centered Header */
+ .templates-container .cv-3-wrapper .header-section {
+     background: #1a1a1a;
+     padding: 25px 28px;
+     text-align: center;
+ }
+
+ .templates-container .cv-3-wrapper .name {
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 700;
+     font-size: 30px;
+     letter-spacing: 1px;
+     margin-bottom: 3px;
+     line-height: 1;
+     color: white;
+ }
+
+ .templates-container .cv-3-wrapper .first-name,
+ .templates-container .cv-3-wrapper .last-name {
+     display: inline;
+ }
+
+ .templates-container .cv-3-wrapper .profession {
+     font-size: 13px;
+     font-weight: 500;
+     text-transform: uppercase;
+     letter-spacing: 1.5px;
+     color: #f093fb;
+     margin-bottom: 8px;
+ }
+
+ .templates-container .cv-3-wrapper .contact-grid {
+     display: flex;
+     justify-content: center;
+     gap: 18px;
+     font-size: 11px;
+     color: #ccc;
+     flex-wrap: wrap;
+ }
+
+ .templates-container .cv-3-wrapper .contact-grid i {
+     margin-right: 4px;
+     color: #f093fb;
+ }
+
+ /* TWO COLUMN CONTENT AREA */
+ .templates-container .cv-3-wrapper .content-wrapper {
+     display: flex;
+     flex: 1;
+     overflow: hidden;
+ }
+
+ .templates-container .cv-3-wrapper .left {
+     width: 62%;
+     padding: 16px 20px;
+     display: flex;
+     flex-direction: column;
+     gap: 12px;
+ }
+
+ .templates-container .cv-3-wrapper .right {
+     width: 38%;
+     background: #f8f8f8;
+     padding: 16px 16px;
+     border-left: 3px solid #f093fb;
+     display: flex;
+     flex-direction: column;
+     gap: 14px;
+ }
+
+ .templates-container .cv-3-wrapper .section-title {
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 900;
+     font-size: 15px;
+     text-transform: uppercase;
+     letter-spacing: 1.5px;
+     color: #1a1a1a;
+     margin-bottom: 8px;
+     position: relative;
+     padding-left: 12px;
+ }
+
+ .templates-container .cv-3-wrapper .section-title::before {
+     content: "";
+     position: absolute;
+     left: 0;
+     top: 50%;
+     transform: translateY(-50%);
+     width: 4px;
+     height: 4px;
+     background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+     border-radius: 50%;
+ }
+
+ .templates-container .cv-3-wrapper .profile-text {
+     font-size: 11px;
+     color: #555;
+     line-height: 1.5;
+     margin-bottom: 0;
+ }
+
+ /* Compact Work Experience */
+ .templates-container .cv-3-wrapper .work-items-container {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .templates-container .cv-3-wrapper .work-item {
+     position: relative;
+     padding-left: 0;
+ }
+
+ .templates-container .cv-3-wrapper .work-header {
+     border-left: 3px solid #f093fb;
+     background: #f8f8f8;
+     padding: 6px 10px;
+     margin-bottom: 15px;
+     border-radius: 8px;
+ }
+
+ .templates-container .cv-3-wrapper .work-left {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+ }
+
+ .templates-container .cv-3-wrapper .job-title {
+     font-weight: 700;
+     font-size: 14px;
+     color: #1a1a1a;
+     margin-bottom: 2px;
+ }
+
+ .templates-container .cv-3-wrapper .job-company {
+     font-size: 12px;
+     color: var(--muted);
+     font-weight: 500;
+ }
+
+ .templates-container .cv-3-wrapper .work-company {
+     font-weight: 600;
+     color: #555;
+ }
+
+ .templates-container .cv-3-wrapper .work-year {
+     font-weight: 700;
+     font-size: 11px;
+     color: #f5576c;
+     text-transform: uppercase;
+     background: #fff;
+     padding: 4px 8px;
+     border-radius: 12px;
+     white-space: nowrap;
+     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+ }
+
+ .templates-container .cv-3-wrapper .job-desc {
+     font-size: 10px;
+     color: #555;
+     line-height: 1.4;
+ }
+
+ /* Compact Education Cards */
+ .templates-container .cv-3-wrapper .edu-items-container {
+     display: flex;
+     flex-direction: column;
+     gap: 8px;
+ }
+
+ .templates-container .cv-3-wrapper .edu-item {
+     background: white;
+     padding: 8px 10px;
+     margin-bottom: 10px;
+     border-radius: 5px;
+     border-left: 3px solid #f093fb;
+ }
+
+ .templates-container .cv-3-wrapper .edu-degree {
+     font-weight: 700;
+     font-size: 13px;
+     color: #1a1a1a;
+     margin-bottom: 2px;
+ }
+
+ .templates-container .cv-3-wrapper .edu-location {
+     font-size: 11px;
+     color: var(--muted);
+     margin-bottom: 3px;
+ }
+
+ .templates-container .cv-3-wrapper .institute {
+     font-weight: 500;
+ }
+
+ .templates-container .cv-3-wrapper .edu-year {
+     font-weight: 700;
+     font-size: 11px;
+     color: #f5576c;
+     text-transform: uppercase;
+     letter-spacing: 0.5px;
+ }
+
+ /* Compact Skills Grid */
+ .templates-container .cv-3-wrapper .skills {
+     display: flex;
+     flex-direction: column;
+     gap: 6px;
+     font-size: 11px;
+ }
+
+ .templates-container .cv-3-wrapper .skill-item {
+     background: white;
+     padding: 5px 8px;
+     border-radius: 4px;
+     font-weight: 600;
+     color: #333;
+     border-left: 3px solid #f093fb;
+ }
+
+ /* =============================================================================================================== */
+
+ /* TEMPLATE 1 STYLES */
+
+ /* =============================================================================================================== */
+ .templates-container .cv-4-wrapper .resume {
+     height: 810px;
+     width: 572px;
+     border: none;
+     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+     background: white;
+     font-size: 14px;
+     display: flex;
+     flex-direction: column;
+     overflow: hidden;
+ }
+
+ /* Horizontal Top Banner */
+ .templates-container .cv-4-wrapper .header-section {
+     background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+     padding: 26px 32px;
+     display: flex;
+     gap: 20px;
+     align-items: center;
+     color: white;
+     position: relative;
+ }
+
+ .templates-container .cv-4-wrapper .accent-bar {
+     width: 6px;
+     height: 100%;
+     background: #00d4ff;
+     position: absolute;
+     left: 0;
+     top: 0;
+ }
+
+ .templates-container .cv-4-wrapper .header-content {
+     flex: 1;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .templates-container .cv-4-wrapper .name {
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 900;
+     font-size: 26px;
+     letter-spacing: 1px;
+     line-height: 1.1;
+     color: white;
+     margin-bottom: 4px;
+ }
+
+ .templates-container .cv-4-wrapper .first-name {
+     display: inline;
+     font-weight: 300;
+ }
+
+ .templates-container .cv-4-wrapper .last-name {
+     display: inline;
+     font-weight: 900;
+ }
+
+ .templates-container .cv-4-wrapper .profession {
+     font-size: 12px;
+     font-weight: 500;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     color: #00d4ff;
+ }
+
+ .templates-container .cv-4-wrapper .contact-section {
+     font-size: 11px;
+     color: rgba(255, 255, 255, 0.85);
+
+ }
+
+ .templates-container .cv-4-wrapper .contact-mini {
+     display: flex;
+     gap: 16px;
+     flex-wrap: wrap;
+ }
+
+ .templates-container .cv-4-wrapper .contact-section i {
+     color: #00d4ff;
+     margin-right: 5px;
+ }
+
+ /* Main Content - Left Sidebar + Right Content */
+ .templates-container .cv-4-wrapper .content-wrapper {
+     display: flex;
+     flex: 1;
+     overflow: hidden;
+ }
+
+ /* Left Sidebar - 35% */
+ .templates-container .cv-4-wrapper .left {
+     width: 40%;
+     background: #f8f9fa;
+     padding: 20px 18px;
+     border-right: 2px solid #00d4ff;
+     display: flex;
+     flex-direction: column;
+     gap: 18px;
+ }
+
+ /* Right Main Content - 65% */
+ .templates-container .cv-4-wrapper .right {
+     width: 60%;
+     padding: 20px 24px;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .templates-container .cv-4-wrapper .section-title {
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 800;
+     font-size: 15px;
+     text-transform: uppercase;
+     letter-spacing: 1.5px;
+     color: #0f2027;
+     margin-bottom: 10px;
+     padding-bottom: 6px;
+     border-bottom: 2px solid #00d4ff;
+ }
+
+ /* Profile in Sidebar */
+ .templates-container .cv-4-wrapper .profile-text {
+     font-size: 11px;
+     color: #444;
+     line-height: 1.6;
+     margin-bottom: 0;
+ }
+
+ /* Education - Sidebar */
+ .templates-container .cv-4-wrapper .edu-items-container {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+ }
+
+ .templates-container .cv-4-wrapper .edu-item {
+     margin-bottom: 10px;
+     background: white;
+     padding: 10px 12px;
+     border-radius: 6px;
+     border-left: 3px solid #00d4ff;
+ }
+
+ .templates-container .cv-4-wrapper .edu-degree {
+     font-weight: 700;
+     font-size: 11px;
+     color: #0f2027;
+     margin-bottom: 3px;
+ }
+
+ .templates-container .cv-4-wrapper .edu-location {
+     font-size: 10px;
+     color: var(--muted);
+     margin-bottom: 4px;
+ }
+
+ .templates-container .cv-4-wrapper .institute {
+     font-weight: 600;
+ }
+
+ .templates-container .cv-4-wrapper .edu-year {
+     font-weight: 700;
+     font-size: 9px;
+     color: #00d4ff;
+     text-transform: uppercase;
+ }
+
+ /* Skills - Sidebar */
+ .templates-container .cv-4-wrapper .skills {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 8px;
+     font-size: 10px;
+ }
+
+ .templates-container .cv-4-wrapper .skill-item {
+     background: white;
+     padding: 4px 8px;
+     border-radius: 15px;
+     font-weight: 600;
+     color: #0f2027;
+     border: 2px solid #00d4ff;
+ }
+
+ /* Work Experience - Right Side */
+ .templates-container .cv-4-wrapper .work-items-container {
+     display: flex;
+     flex-direction: column;
+     gap: 14px;
+ }
+
+ .templates-container .cv-4-wrapper .work-item {
+     padding-bottom: 14px;
+     border-bottom: 1px dashed #e0e0e0;
+ }
+
+ .templates-container .cv-4-wrapper .work-item:last-child {
+     border-bottom: none;
+ }
+
+ .templates-container .cv-4-wrapper .job-title {
+     font-weight: 700;
+     font-size: 14px;
+     color: #0f2027;
+     margin-bottom: 3px;
+ }
+
+ .templates-container .cv-4-wrapper .work-year {
+     font-weight: 700;
+     font-size: 12px;
+     color: #00d4ff;
+     text-transform: uppercase;
+     margin-bottom: 3px;
+     display: block;
+ }
+
+ .templates-container .cv-4-wrapper .job-company {
+     font-size: 13px;
+     color: var(--muted);
+     font-weight: 500;
+     margin-bottom: 6px;
+ }
+
+ .templates-container .cv-4-wrapper .work-company {
+     font-weight: 600;
+     color: #555;
+ }
+
+ .templates-container .cv-4-wrapper .job-desc {
+     font-size: 11px;
+     color: #555;
+     line-height: 1.5;
+ }
+
+ /* =============================================================================================================== */
+
+ /* TEMPLATE 1 STYLES */
+
+ /* =============================================================================================================== */
+ /* TEMPLATE 5 - ASYMMETRIC BOLD SIDEBAR */
+ .templates-container .cv-5-wrapper .resume {
+     height: 810px;
+     width: 572px;
+     border: none;
+     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+     background: white;
+     font-size: 14px;
+     display: flex;
+     flex-direction: row;
+     overflow: hidden;
+ }
+
+ /* Bold Left Sidebar - 42% */
+ .templates-container .cv-5-wrapper .left {
+     width: 42%;
+     background: #34495E;
+     /* Slate */
+     padding: 32px 24px;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     gap: 24px;
+ }
+
+ /* Name Section in Sidebar */
+ .templates-container .cv-5-wrapper .name {
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 900;
+     font-size: 25px;
+     letter-spacing: 0.5px;
+     line-height: 1.1;
+     color: white;
+     margin-bottom: 10px;
+ }
+
+ .templates-container .cv-5-wrapper .first-name,
+ .templates-container .cv-5-wrapper .last-name {
+     display: block;
+     word-break: break-word;
+ }
+
+ .templates-container .cv-5-wrapper .profession {
+     font-size: 12px;
+     font-weight: 600;
+     text-transform: uppercase;
+     letter-spacing: 1.5px;
+     color: #2ECC71;
+     /* Emerald */
+     padding-bottom: 20px;
+     border-bottom: 3px solid #2ECC71;
+ }
+
+ /* Contact in Sidebar */
+ .templates-container .cv-5-wrapper .contact-list {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+     gap: 12px;
+ }
+
+ .templates-container .cv-5-wrapper .contact-list li {
+     font-size: 11px;
+     display: flex;
+     align-items: flex-start;
+     gap: 10px;
+     color: rgba(255, 255, 255, 0.95);
+     line-height: 1.5;
+ }
+
+ .templates-container .cv-5-wrapper .contact-list i {
+     color: #2ECC71;
+     /* Emerald */
+     font-size: 13px;
+     margin-top: 2px;
+ }
+
+ .templates-container .cv-5-wrapper .section-title {
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 800;
+     font-size: 13px;
+     text-transform: uppercase;
+     letter-spacing: 1.5px;
+     margin-bottom: 12px;
+ }
+
+ .templates-container .cv-5-wrapper .left .section-title {
+     color: #2ECC71;
+     /* Emerald */
+     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+     padding-bottom: 6px;
+ }
+
+ /* Education in Sidebar */
+ .templates-container .cv-5-wrapper .edu-items-container {
+     display: flex;
+     flex-direction: column;
+     gap: 14px;
+ }
+
+ .templates-container .cv-5-wrapper .edu-item {
+     border-left: 3px solid #2ECC71;
+     /* Emerald */
+     padding-left: 12px;
+ }
+
+ .templates-container .cv-5-wrapper .edu-degree {
+     font-weight: 700;
+     font-size: 12px;
+     color: white;
+     margin-bottom: 4px;
+ }
+
+ .templates-container .cv-5-wrapper .edu-location {
+     font-size: 10px;
+     color: rgba(255, 255, 255, 0.7);
+     margin-bottom: 4px;
+ }
+
+ .templates-container .cv-5-wrapper .institute {
+     font-weight: 600;
+ }
+
+ .templates-container .cv-5-wrapper .edu-year {
+     font-weight: 700;
+     font-size: 10px;
+     color: #2ECC71;
+     /* Emerald */
+     text-transform: uppercase;
+ }
+
+ /* Skills in Sidebar */
+ .templates-container .cv-5-wrapper .skills {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     font-size: 11px;
+ }
+
+ .templates-container .cv-5-wrapper .skill-item {
+     color: rgba(255, 255, 255, 0.95);
+     padding-left: 16px;
+     position: relative;
+ }
+
+ .templates-container .cv-5-wrapper .skill-item::before {
+     content: "▸";
+     position: absolute;
+     left: 0;
+     color: #2ECC71;
+     /* Emerald */
+     font-weight: 900;
+ }
+
+ /* Right Main Content - 58% */
+ .templates-container .cv-5-wrapper .right {
+     width: 58%;
+     padding: 32px 28px;
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+ }
+
+ .templates-container .cv-5-wrapper .right .section-title {
+     color: #34495E;
+     /* Slate */
+     border-left: 5px solid #2ECC71;
+     /* Emerald */
+     padding-left: 12px;
+ }
+
+ /* Profile */
+ .templates-container .cv-5-wrapper .profile-text {
+     font-size: 11px;
+     color: #555;
+     line-height: 1.7;
+     margin-bottom: 0;
+ }
+
+ /* Work Experience - Main Area */
+ .templates-container .cv-5-wrapper .work-items-container {
+     display: flex;
+     flex-direction: column;
+     gap: 16px;
+ }
+
+ .templates-container .cv-5-wrapper .work-item {
+     padding-left: 16px;
+     border-left: 2px solid #2ECC71;
+     /* Emerald */
+     position: relative;
+ }
+
+ .templates-container .cv-5-wrapper .work-item::before {
+     content: "";
+     position: absolute;
+     left: -6px;
+     top: 4px;
+     width: 10px;
+     height: 10px;
+     background: #2ECC71;
+     /* Emerald */
+     border-radius: 50%;
+ }
+
+ .templates-container .cv-5-wrapper .job-title {
+     font-weight: 700;
+     font-size: 13px;
+     color: #2c3e50;
+     /* Slate */
+     margin-bottom: 3px;
+ }
+
+ .templates-container .cv-5-wrapper .work-year {
+     font-weight: 700;
+     font-size: 10px;
+     color: #2ECC71;
+     /* Emerald */
+     text-transform: uppercase;
+     margin-bottom: 4px;
+     display: block;
+ }
+
+ .templates-container .cv-5-wrapper .job-company {
+     font-size: 11px;
+     color: #888;
+     font-weight: 500;
+     margin-bottom: 6px;
+ }
+
+ .templates-container .cv-5-wrapper .work-company {
+     font-weight: 600;
+     color: #555;
+ }
+
+ .templates-container .cv-5-wrapper .job-desc {
+     font-size: 11px;
+     color: #555;
+     line-height: 1.6;
+ }
